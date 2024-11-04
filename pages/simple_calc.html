@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Adder</title>
+
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="stylesheet" href="/css/form.css" />
+    </head>
+
+    <body>
+        <nav>
+            <img id="logo" src="/assets/logo.svg" />
+            <img id="menu" src="/assets/menu.svg" />
+        </nav>
+        <main>
+            <header>
+                <h1>Simple Calculations</h1>
+            </header>
+            <section class="two-col">
+                <form id="calc" class="card">
+                    <h2>Fahrenheit to Celsius</h2>
+                    <div class="field input">
+                        <label for="input">Fahrenheit</label>
+                        <input id="input" type="number" name="input" />
+                        <button type="submit">
+                            <img src="/assets/chevron-right.svg" />
+                        </button>
+                    </div>
+                    <div class="field">
+                        <label for="output">Celcius</label>
+                        <input
+                            id="output"
+                            type="number"
+                            name="output"
+                            readonly />
+                    </div>
+                </form>
+                <form id="calc_type">
+                    <h2>Choose Operation</h2>
+                    <div class="field radio">
+                        <input
+                            type="radio"
+                            id="fahToCel"
+                            name="operation"
+                            value="fahToCel"
+                            checked="checked" />
+                        <label for="fahToCel">Fahrenheit to Celcius</label>
+                    </div>
+                    <div class="field">
+                        <input
+                            type="radio"
+                            id="celToFah"
+                            name="operation"
+                            value="celToFah" />
+                        <label for="celToFah">Celcius to Fahrenheit</label>
+                    </div>
+                    <div class="field">
+                        <input
+                            type="radio"
+                            id="mtrToFt"
+                            name="operation"
+                            value="mtrToFt" />
+                        <label for="mtrToFt">Meters to Feet</label>
+                    </div>
+                    <div class="field">
+                        <input
+                            type="radio"
+                            id="ftToMtr"
+                            name="operation"
+                            value="ftToMtr" />
+                        <label for="ftToMtr">Feet to Meters</label>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <script src="/js/adder.js"></script>
+    </body>
+</html>
