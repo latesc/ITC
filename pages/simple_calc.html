@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Simple Calculations</title>
+
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="stylesheet" href="/css/form.css" />
+    </head>
+
+    <body>
+        <nav>
+            <a href="/">
+                <img id="logo" src="/assets/logo.svg" />
+            </a>
+            <img id="menu" src="/assets/menu.svg" />
+        </nav>
+        <main>
+            <header>
+                <h1>Simple Calculations</h1>
+            </header>
+            <section class="two-col">
+                <form id="calc" class="card">
+                    <h2 class="title">Fahrenheit to Celsius</h2>
+                    <div class="field input">
+                        <label for="input">Fahrenheit</label>
+                        <input id="input" type="number" name="input" />
+                        <button type="submit">
+                            <img src="/assets/chevron-right.svg" />
+                        </button>
+                    </div>
+                    <div class="field">
+                        <label for="output">Celcius</label>
+                        <output
+                            type="number"
+                            id="output"
+                            name="output"
+                            for="input"
+                        >
+                        </output>
+                    </div>
+                </form>
+                <form id="calc_type">
+                    <h2>Choose Operation</h2>
+                    <div class="field radio">
+                        <input
+                            type="radio"
+                            id="fahToCel"
+                            name="operation"
+                            value="fahToCel"
+                            checked="checked"
+                        />
+                        <label for="fahToCel">Fahrenheit to Celcius</label>
+                    </div>
+                    <div class="field">
+                        <input
+                            type="radio"
+                            id="celToFah"
+                            name="operation"
+                            value="celToFah"
+                        />
+                        <label for="celToFah">Celcius to Fahrenheit</label>
+                    </div>
+                    <div class="field">
+                        <input
+                            type="radio"
+                            id="mtrToFt"
+                            name="operation"
+                            value="mtrToFt"
+                        />
+                        <label for="mtrToFt">Meters to Feet</label>
+                    </div>
+                    <div class="field">
+                        <input
+                            type="radio"
+                            id="ftToMtr"
+                            name="operation"
+                            value="ftToMtr"
+                        />
+                        <label for="ftToMtr">Feet to Meters</label>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <span>made with </span>
+            <img src="/assets/heart.svg" />
+            <span> by <a href="https://latesc.com">luis escarrilla</a></span>
+        </footer>
+
+        <script src="/js/simple_calc.js"></script>
+    </body>
+</html>
