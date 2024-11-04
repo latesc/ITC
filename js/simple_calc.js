@@ -55,18 +55,23 @@ calculation_form.addEventListener("submit", function (event) {
     event.preventDefault();
     let calc_value;
 
-    if (operation === "fahToCel") {
-        calc_value = ((input.value - 32) * 5) / 9;
-        calc_value = calc_value.toFixed(1);
-    } else if (operation === "celToFah") {
-        calc_value = (input.value * 9) / 5 + 32;
-        calc_value = calc_value.toFixed(1);
-    } else if (operation === "mtrToFt") {
-        calc_value = input.value * 3.28084;
-        calc_value = calc_value.toFixed(2);
-    } else if (operation === "ftToMtr") {
-        calc_value = input.value / 3.28084;
-        calc_value = calc_value.toFixed(2);
+    switch (operation) {
+        case "fahToCel":
+            calc_value = ((input.value - 32) * 5) / 9;
+            calc_value = calc_value.toFixed(1);
+            break;
+        case "celToFah":
+            calc_value = (input.value * 9) / 5 + 32;
+            calc_value = calc_value.toFixed(1);
+            break;
+        case "mtrToFt":
+            calc_value = input.value * 3.28084;
+            calc_value = calc_value.toFixed(2);
+            break;
+        case "ftToMtr":
+            calc_value = input.value / 3.28084;
+            calc_value = calc_value.toFixed(2);
+            break;
     }
 
     output.innerHTML = calc_value;

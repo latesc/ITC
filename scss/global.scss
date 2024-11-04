@@ -48,6 +48,10 @@ body {
   flex-direction: column;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 48px;
   font-weight: 800;
@@ -95,10 +99,10 @@ nav {
   align-items: center;
   align-self: stretch;
 
-  border-bottom: 1px solid var(--neutral-500);
+  border-bottom: 1px solid var(--neutral-300);
 
   & #logo {
-    width: auto;
+    width: 100%;
     height: 2.5rem;
   }
 
@@ -115,14 +119,12 @@ main {
 
   width: 100%;
   max-width: 50rem;
-}
 
-header,
-section {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  box-sizing: border-box;
-  width: min(800px, 100%);
+  &>* {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: min(800px, 100%);
+  }
 }
 
 header {
@@ -135,13 +137,32 @@ header {
   min-height: 16rem;
 
   border-radius: 0.5rem;
-  border: 1px solid var(--neutral-400);
+  border: 1px solid var(--neutral-300);
   background: #FFF;
 
   box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
 }
 
-.two-col-60-40 {
+.two-col {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .two-col {
+    grid-template-columns: 55% auto;
+  }
+}
+
+footer {
+  margin: 4rem auto;
+
+  & a {
+    background: linear-gradient(var(--primary-100), var(--primary-200)) 0 70% / 100% 6px no-repeat;
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+      background-size: 100% 1rem;
+    }
+  }
 }

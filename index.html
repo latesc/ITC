@@ -12,7 +12,9 @@
 
     <body>
         <nav>
-            <img id="logo" src="/assets/logo.svg" />
+            <a href="/">
+                <img id="logo" src="/assets/logo.svg" />
+            </a>
             <img id="menu" src="/assets/menu.svg" />
         </nav>
 
@@ -20,17 +22,17 @@
             <header>
                 <h1>My Assignments</h1>
             </header>
-            <ol>
-                <li>
+            <ol class="two-col">
+                <li class="card">
                     <a href="/pages/simple_calc.html">
                         <h3>Simple Computations</h3>
                         <p>
-                            Uses plain JavaScript to add numbers from two input
-                            boxes
+                            Calculates between Fahrenheit and Celsius, and
+                            between Meters and Feet
                         </p>
                         <div class="details">
-                            <span>HTML</span>
-                            <span>Oct 29, 2024</span>
+                            <span>JS</span>
+                            <span>Nov 4, 2024</span>
                         </div>
                     </a>
                 </li>
@@ -50,10 +52,7 @@
                 <li>
                     <a href="#">
                         <h3>Homepage</h3>
-                        <p>
-                            Uses plain JavaScript to add numbers from two input
-                            boxes
-                        </p>
+                        <p>What the user sees on startup</p>
                         <div class="details">
                             <span>HTML</span>
                             <span>Oct 27, 2024</span>
@@ -64,7 +63,7 @@
         </main>
         <footer>
             <span>made with </span>
-            <img src="" />
+            <img src="/assets/heart.svg" />
             <span> by <a href="https://latesc.com">luis escarrilla</a></span>
         </footer>
     </body>
