@@ -1,6 +1,5 @@
 :root {
   --font: Inter, sans-serif;
-
   --neutral-900: hsl(24, 9.8%, 10%);
   --neutral-800: hsl(12, 6.5%, 15.1%);
   --neutral-700: hsl(30, 6.3%, 25.1%);
@@ -11,7 +10,6 @@
   --neutral-200: hsl(20, 5.9%, 90%);
   --neutral-100: hsl(60, 4.8%, 95.9%);
   --neutral-50: hsl(60, 9.1%, 97.8%);
-
   --primary-900: hsl(340, 27.8%, 21.2%);
   --primary-800: hsl(339.6, 27.8%, 35.3%);
   --primary-700: hsl(339.4, 28%, 49%);
@@ -42,7 +40,6 @@ body {
   font-family: var(--font);
   color: var(--neutral-800);
   background-color: var(--neutral-50);
-
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -94,17 +91,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   align-self: stretch;
-
   border-bottom: 1px solid var(--neutral-500);
-
-  & #logo {
-    width: auto;
-    height: 2.5rem;
-  }
-
-  & #menu {
-    height: 1rem;
-  }
+}
+nav #logo {
+  width: auto;
+  height: 2.5rem;
+}
+nav #menu {
+  height: 1rem;
 }
 
 main {
@@ -112,11 +106,35 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-
   width: 100%;
   max-width: 50rem;
 }
 
-header {
-  padding: 5rem 2rem;
+header,
+section {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  width: min(800px, 100%);
 }
+
+header {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.card {
+  height: 100%;
+  min-height: 16rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--neutral-400);
+  background: #FFF;
+  box-shadow: 0px 1px 4px 0px rgba(25, 33, 61, 0.08);
+}
+
+.two-col-60-40 {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/*# sourceMappingURL=global.css.map */
