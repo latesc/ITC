@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Income Tax Calculator</title>
+
+        <link rel="stylesheet" href="/css/global.css" />
+        <link rel="stylesheet" href="/css/form.css" />
+    </head>
+
+    <body>
+        <nav>
+            <a href="/">
+                <img id="logo" src="/assets/logo.svg" />
+            </a>
+            <img id="menu" src="/assets/menu.svg" />
+        </nav>
+        <main>
+            <header>
+                <h1>Income Tax Calculator</h1>
+            </header>
+            <section>
+                <form id="calc_form" class="card">
+                    <h2 class="title">Compute Income Tax</h2>
+                    <div class="field input">
+                        <label for="input">Income</label>
+                        <input id="input" type="number" name="input" />
+                        <button type="submit">
+                            <img src="/assets/chevron-right.svg" />
+                        </button>
+                    </div>
+                    <div class="field">
+                        <label for="output">Tax</label>
+                        <output
+                            type="number"
+                            id="output"
+                            name="output"
+                            for="input"
+                        >
+                        </output>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <span>made with </span>
+            <img src="/assets/heart.svg" />
+            <span> by <a href="https://latesc.com">luis escarrilla</a></span>
+        </footer>
+
+        <script src="/js/income_tax.js""></script>
+    </body>
+</html>
