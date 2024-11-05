@@ -5,7 +5,6 @@ form {
   gap: 1rem;
   box-sizing: border-box;
 }
-
 form h2 {
   font-size: 16px;
   line-height: 20px;
@@ -19,14 +18,11 @@ form h2 {
   align-items: center;
   height: 40px;
 }
-
 .field:has([type=number]) label {
   width: 5.5rem;
   flex: none;
 }
-
-.field:has([type=number]) input,
-.field:has([type=number]) output {
+.field:has([type=number]) input, .field:has([type=number]) output {
   padding: 0.75rem 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid var(--neutral-400);
@@ -36,7 +32,6 @@ form h2 {
   box-sizing: border-box;
   height: 100%;
 }
-
 .field:has([type=number]) button {
   border-radius: 0.25rem;
   width: 40px;
@@ -48,12 +43,10 @@ form h2 {
   justify-content: center;
   border: none;
 }
-
 .field:has([type=number]) button:hover {
   background-color: var(--primary-400);
   cursor: pointer;
 }
-
 .field:has(input[type=radio]) input {
   width: auto;
   padding: 4px;

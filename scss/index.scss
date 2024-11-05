@@ -5,7 +5,7 @@ ol {
 
 @media (min-width: 640px) {
   ol {
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
       "latest ."
       "latest ."
