@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
 
-        <title>Simple Calculations</title>
+        <title>nth Operations</title>
 
         <link rel="stylesheet" href="/css/global.css" />
         <link rel="stylesheet" href="/css/form.css" />
@@ -19,20 +19,20 @@
         </nav>
         <main>
             <header>
-                <h1>Simple Calculations</h1>
+                <h1>nth Operations</h1>
             </header>
             <section class="two-col">
                 <form id="calc" class="card">
-                    <h2 class="title">Fahrenheit to Celsius</h2>
+                    <h2 class="title">nth Factorial</h2>
                     <div class="field input">
-                        <label for="input">Fahrenheit</label>
+                        <label for="input">Integer</label>
                         <input id="input" type="number" name="input" />
                         <button type="submit">
                             <img src="/assets/chevron-right.svg" />
                         </button>
                     </div>
                     <div class="field">
-                        <label for="output">Celcius</label>
+                        <label for="output">Output</label>
                         <output
                             type="number"
                             id="output"
@@ -47,39 +47,30 @@
                     <div class="field radio">
                         <input
                             type="radio"
-                            id="fahToCel"
+                            id="factorial"
                             name="operation"
-                            value="fahToCel"
+                            value="factorial"
                             checked="checked"
                         />
-                        <label for="fahToCel">Fahrenheit to Celcius</label>
+                        <label for="factorial">nth Factorial</label>
                     </div>
                     <div class="field">
                         <input
                             type="radio"
-                            id="celToFah"
+                            id="sum"
                             name="operation"
-                            value="celToFah"
+                            value="sum"
                         />
-                        <label for="celToFah">Celcius to Fahrenheit</label>
+                        <label for="sum">Sum of first n numbers</label>
                     </div>
                     <div class="field">
                         <input
                             type="radio"
-                            id="mtrToFt"
+                            id="average"
                             name="operation"
-                            value="mtrToFt"
+                            value="average"
                         />
-                        <label for="mtrToFt">Meters to Feet</label>
-                    </div>
-                    <div class="field">
-                        <input
-                            type="radio"
-                            id="ftToMtr"
-                            name="operation"
-                            value="ftToMtr"
-                        />
-                        <label for="ftToMtr">Feet to Meters</label>
+                        <label for="average">Average of first n numbers</label>
                     </div>
                 </form>
             </section>
@@ -90,6 +81,6 @@
             <span> by <a href="https://latesc.com">luis escarrilla</a></span>
         </footer>
 
-        <script src="/js/simple_calc.js"></script>
+        <script src="/js/nth_operations.js"></script>
     </body>
 </html>
