@@ -1,4 +1,6 @@
 .replit
+package-lock.json
+package.json
 
 css/*.map
 scss/
