@@ -1,0 +1,9 @@
+run = "live-server --no-browser"
+modules = ["nodejs-20"]
+
+[deployment]
+run = ["sh", "-c", "live-server --no-browser"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
