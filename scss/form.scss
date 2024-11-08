@@ -19,7 +19,7 @@ form {
   align-items: center;
   height: 40px;
 
-  &:has([type="number"]) {
+  &:has([type="number"]), &:has([type="text"]) {
 
     & label {
       width: 5.5rem;
