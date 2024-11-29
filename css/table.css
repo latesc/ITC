@@ -1,0 +1,41 @@
+table {
+  width: max(100%, 500px);
+  border-radius: 0.25rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  color: #333;
+}
+table, table th, table td {
+  border: 1px solid var(--neutral-200);
+  padding: 0.2rem 0.4rem;
+}
+
+section:has(table) {
+  overflow-x: auto;
+}
+
+th {
+  background-color: #FFF;
+}
+
+tbody td:not(:nth-child(2)) {
+  text-align: center;
+}
+tbody tr {
+  background-color: #FFF;
+}
+tbody tr:nth-child(even) {
+  background-color: var(--neutral-50);
+}
+
+.table-actions {
+  display: flex;
+  width: 100%;
+  flex-direciton: row;
+  gap: 1rem;
+}
+
+/*# sourceMappingURL=table.css.map */

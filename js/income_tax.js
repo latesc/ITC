@@ -27,9 +27,9 @@ Taxable Income	Income Tax
 10,000,000.00	3,110,000.00
 */
 
-let form = document.getElementById("calc_form");
-let input = form.querySelector("#input");
-let output = form.querySelector("#output");
+let form = document.getElementById("calc_form"),
+    input = form.querySelector("#input"),
+    output = form.querySelector("#output");
 
 const tax_brackets = [
     { lower: 0, upper: 250000, base: 0, rate: 0 },
@@ -47,8 +47,8 @@ const tax_brackets = [
 
 // Binary Search
 function getTaxBracket(income) {
-    let low = 0;
-    let high = tax_brackets.length - 1;
+    let low = 0,
+        high = tax_brackets.length - 1;
 
     while (low <= high) {
         const mid = Math.floor((low + high) / 2);

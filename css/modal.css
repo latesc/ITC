@@ -1,0 +1,16 @@
+dialog {
+  transition: opacity 0.2s ease-in-out;
+}
+dialog[open] {
+  opacity: 1;
+}
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+  }
+}
+dialog:not([open]) {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=modal.css.map */

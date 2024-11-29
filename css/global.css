@@ -65,7 +65,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 32px;
   letter-spacing: -0.6%;
 }
@@ -105,6 +105,25 @@ nav #menu {
   height: 1rem;
 }
 
+button {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 0.25rem;
+  background-color: var(--primary-500);
+  color: #FFF;
+  font-weight: 600;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: ease 0.1s;
+}
+button:hover {
+  background-color: var(--primary-400);
+  cursor: pointer;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -117,6 +136,7 @@ main > * {
   padding-left: 2rem;
   padding-right: 2rem;
   width: min(800px, 100%);
+  margin-bottom: 2rem;
 }
 
 header {
@@ -124,9 +144,12 @@ header {
   padding-bottom: 5rem;
 }
 
+.dialog {
+  width: min(700px, 100%);
+  height: max-content;
+}
+
 .card {
-  height: 100%;
-  min-height: 16rem;
   border-radius: 0.5rem;
   border: 1px solid var(--neutral-300);
   background: #FFF;
@@ -152,6 +175,31 @@ footer a {
 }
 footer a:hover {
   background-size: 100% 1rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  header {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  nav {
+    padding: 1.5rem 2rem;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
