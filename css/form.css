@@ -34,7 +34,19 @@ form h2 {
   height: 100%;
 }
 .field:has([type=number]) button, .field:has([type=text]) button {
+  border-radius: 0.25rem;
   width: auto;
+  height: 40px;
+  background-color: var(--primary-500);
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.field:has([type=number]) button:hover, .field:has([type=text]) button:hover {
+  background-color: var(--primary-400);
+  cursor: pointer;
 }
 .field:has(input[type=radio]) input {
   width: auto;
