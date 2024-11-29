@@ -1,0 +1,7 @@
+.replit
+.prettierignore
+package.json
+package-lock.json
+
+css/*.map
+scss/
