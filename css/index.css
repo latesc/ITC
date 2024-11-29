@@ -21,6 +21,9 @@ li > a {
   flex-direction: column;
 }
 
+li:first-child {
+  transition: ease 0.3s;
+}
 li:first-child a::before {
   content: "";
   background: linear-gradient(138deg, var(--primary-300) -6.17%, var(--primary-400) 120.08%);
@@ -44,6 +47,10 @@ li:first-child a > .details {
   display: flex;
   justify-content: space-between;
 }
+li:first-child:hover {
+  background: var(--neutral-100);
+  box-shadow: 0px 1px 8px 0px rgba(25, 33, 61, 0.16);
+}
 
 li:not(:first-child) > a {
   display: flex;
@@ -52,6 +59,8 @@ li:not(:first-child) > a {
   height: auto;
   gap: 0.5rem;
   padding: 1rem;
+  border-radius: 1rem;
+  transition: ease 0.3s;
 }
 li:not(:first-child) > a > .details {
   order: 1;
@@ -74,6 +83,9 @@ li:not(:first-child) > a > h3 {
 }
 li:not(:first-child) > a > p {
   display: none;
+}
+li:not(:first-child) > a:hover {
+  background: var(--neutral-200);
 }
 
 /*# sourceMappingURL=index.css.map */

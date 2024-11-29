@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+
+        <title>Simple Payroll</title>
+
+        <link rel="stylesheet" href="../css/global.css" />
+        <link rel="stylesheet" href="../css/form.css" />
+        <link rel="stylesheet" href="../css/table.css" />
+        <link rel="stylesheet" href="../css/modal.css" />
+    </head>
+
+    <body>
+        <nav>
+            <a href="/">
+                <img id="logo" src="../assets/logo.svg" />
+            </a>
+            <img id="menu" src="../assets/menu.svg" />
+        </nav>
+        <main>
+            <header>
+                <h1>Simple Payroll</h1>
+            </header>
+            <section class="table-actions">
+                <button type="button" id="addEmployeeBtn">Add Employee</button>
+                <button type="button" id="removeEmployeeBtn">Remove Employee</button>
+            </section>
+
+            <section>
+                <table id="payroll_table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Days Worked</th>
+                            <th>Daily Rate</th>
+                            <th>Gross Pay</th>
+                            <th>Deduction</th>
+                            <th>Net Pay</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6" class="total">Total</td>
+                            <td class="total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <span>made with </span>
+            <img src="../assets/heart.svg" />
+            <span> by <a href="https://latesc.com">luis escarrilla</a></span>
+        </footer>
+        
+        <dialog id="addEmployeeModal" class="card dialog" >
+            <form id="payroll_add_form" method="dialog">
+                <span></span>
+                <h2 class="title">Add Employee</h2>
+                <div class="field input">
+                    <label for="employee_name">Name</label>
+                    <input id="employee_name" type="text" name="employee_name" />
+                </div>
+                <div class="field input">
+                    <label for="days_worked">Days Worked</label>
+                    <input id="days_worked" type="number" name="days_worked" />
+                </div>
+                <div class="field input">
+                    <label for="daily_rate">Daily Rate</label>
+                    <input id="daily_rate" type="number" name="daily_rate" />
+                </div>
+                <div class="field input">
+                    <label for="deduction_amount">Deduction Amount</label>
+                    <input id="deduction_amount" type="number" name="deduction_amount" />
+                </div>
+                <button type="submit">
+                <img src="../assets/chevron-right.svg" />
+                </button>
+                <!-- generate random employee -->
+                <button type="button" id="generate_employee">Generate Employee</button>
+                <button type="button" class="close_btn">Close</button>
+            </form>
+        </dialog>
+        <dialog id="removeEmployeeModal" class="card dialog" >
+            <form id="payroll_remove_form">
+                <div class="field input">
+                    <label>Remove Employee #</label>
+                    <input id="rm_employee_number" type="number" name="rm_employee_number" />
+                    <button type="button" id="remove_employee">
+                    Remove
+                    </button>
+                </div>
+                <button type="button" id="clear_payroll">
+                Clear Payroll
+                </button>
+                <button type="button" class="close_btn">Close</button>
+            </form>
+        </dialog>
+        
+        <script src="../js/simple_payroll.js""></script>
+    </body>
+</html>
